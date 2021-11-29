@@ -1,0 +1,67 @@
+.carousel-title h2 {
+  color: white;
+  padding-left: 12px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.Carousel {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding-bottom: 5px;
+  /* padding: 20px; */
+}
+
+.Carousel img {
+  margin: 0px 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+  width: calc(100vw / 10);
+  background-color: #e5e5e529;
+  border-radius: 5px;
+
+  /* box-shadow: 0 1px 3px #e5e5e529, 0 1px 2px #e5e5e529; */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.Carousel img:hover {
+  background-color: #ffffff77;
+  /* box-shadow: 0 14px 28px #bebebe29, 0 10px 10px #b4b4b429; */
+}
+
+.Carousel img:focus {
+  background-color: rgb(111, 109, 201);
+}
+
+/* Scroll bar style */
+/* width */
+.Carousel::-webkit-scrollbar {
+  /* width: 5px; */
+  height: 10px;
+}
+
+/* Track */
+.Carousel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(112, 112, 112);
+  border-radius: 5px;
+}
+
+/* Handle */
+.Carousel::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.445);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.Carousel::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.808);
+}
+
+/* will change the amount of films shown when screen is smaller */
+@media only screen and (max-width: 992px) {
+  .Carousel img {
+    width: calc(100vw / 5);
+  }
+}

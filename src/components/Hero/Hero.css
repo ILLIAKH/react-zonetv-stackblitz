@@ -1,0 +1,54 @@
+.Hero {
+  margin-bottom: 25px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-4 {
+  flex: 40%;
+}
+
+.col-8 {
+  flex: 60%;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-container img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  /* height: 30em; */
+  /* filter: blur(1px); */
+  /* -webkit-filter: blur(1px); */
+}
+
+.detail-container {
+  padding: 15px 25px;
+  padding-bottom: 0px;
+  color: white;
+  display: flex;
+  background-color: #000000;
+  flex-direction: column;
+}
+
+.detail-container p {
+  color: #ababab;
+  /* max-width: 40%; */
+}
+
+.detail-container h3 {
+  margin-top: 0px;
+}
+
+/* .detail-container h1 span{
+  font-size: 10px;
+} */
